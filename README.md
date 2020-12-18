@@ -15,8 +15,9 @@ Note: __Game details__ in the Steam privacy settings must set to public for this
 [geeseven](https://github.com/geeseven)
 
 ## Standalone hosted
+- Github-pages online version [here](https://marsraptor.github.io/steam-wishlisted-on-xbox-game-pass/).
 - Use the __Steam_Wishlisted_on_Xbox_Game_Pass.html__ file from this repo.
-- Download the file [here](https://github.com/MarsRaptor/steam-wishlisted-on-xbox-game-pass/releases/download/v1.0.0/Steam_Wishlisted_on_Xbox_Game_Pass.html)
+- Download the file [here](https://github.com/MarsRaptor/steam-wishlisted-on-xbox-game-pass/releases/download/v1.0.0/Steam_Wishlisted_on_Xbox_Game_Pass.html).
 - ...TBD
 
 ## License
