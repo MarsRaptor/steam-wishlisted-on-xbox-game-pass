@@ -148,7 +148,7 @@
 
         async function pggamingwikiListOfXboxGamePassgames() {
             const regex = /(?<=<th[^>]+table-xbox-body-game[^>]+><a[^>]+title=")(.*)(?=")/gm;
-            const fetch_url = `https://www.pcgamingwiki.com/wiki/List_of_Xbox_Game_Pass_games`;
+            const fetch_url = `https://cors-anywhere.herokuapp.com/https://www.pcgamingwiki.com/wiki/List_of_Xbox_Game_Pass_games`;
             try {
                 const gamepassgames_html = await (await fetch(fetch_url)).text();
                 return gamepassgames_html.match(regex);
