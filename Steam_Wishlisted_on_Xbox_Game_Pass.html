@@ -124,7 +124,7 @@
                 const fetch_url = `https://store.steampowered.com/wishlist/id/${user}/wishlistdata?p=${page++}`;
 
                 try {
-                    const wishlist_page = await (await fetch(fetch_url, { redirect: 'manual' })).json();
+                    const wishlist_page = await (await fetch(fetch_url, { mode: 'no-cors' })).json();
 
                     if (Array.isArray(wishlist_page)) {
                         pages_left = false;
