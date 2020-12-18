@@ -68,9 +68,7 @@
                     href="https://github.com/Glench/">Glen
                     Chiacchieri</a> used under <a
                     href="https://github.com/Glench/fuzzyset.js/blob/master/LICENSE.md">The
-                    Prosperity Public License 3.0.0</a></h4>
-            <h4><a href="https://cors-anywhere.herokuapp.com/">cors-anywhere</a> API by <a
-                    href="https://github.com/Rob--W/">Rob Wu</a></h4>
+                    Prosperity Public License 3.0.0</a></h4>            
         </details>
         <br>
         <details>
@@ -123,7 +121,7 @@
             let page = 0
             let pages_left = true;
             while (pages_left) {
-                const fetch_url = `https://cors-anywhere.herokuapp.com/https://store.steampowered.com/wishlist/id/${user}/wishlistdata?p=${page++}`;
+                const fetch_url = `https://store.steampowered.com/wishlist/id/${user}/wishlistdata?p=${page++}`;
 
                 try {
                     const wishlist_page = await (await fetch(fetch_url, { redirect: 'manual' })).json();
@@ -150,7 +148,7 @@
 
         async function pggamingwikiListOfXboxGamePassgames() {
             const regex = /(?<=<th[^>]+table-xbox-body-game[^>]+><a[^>]+title=")(.*)(?=")/gm;
-            const fetch_url = `https://cors-anywhere.herokuapp.com/https://www.pcgamingwiki.com/wiki/List_of_Xbox_Game_Pass_games`;
+            const fetch_url = `https://www.pcgamingwiki.com/wiki/List_of_Xbox_Game_Pass_games`;
             try {
                 const gamepassgames_html = await (await fetch(fetch_url)).text();
                 return gamepassgames_html.match(regex);
