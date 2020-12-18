@@ -121,7 +121,7 @@
             let page = 0
             let pages_left = true;
             while (pages_left) {
-                const fetch_url = `https://store.steampowered.com/wishlist/id/${user}/wishlistdata/?p=${page++}`;
+                const fetch_url = `https://cors-anywhere.herokuapp.com/https://store.steampowered.com/wishlist/id/${user}/wishlistdata?p=${page++}`;
 
                 try {
                     const wishlist_page = await (await fetch(fetch_url)).json();
